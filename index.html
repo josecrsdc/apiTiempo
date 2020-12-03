@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="titulo">Api tiempo</h1>
+    </header>
+
+    <div id="contenido">
+
+        <p class="text">Provincia:</p>
+
+        <select name="lista" id="lista">
+            <option value="00">-- Selecciona una provincia --</option>
+        </select>
+
+
+        <div class="contenedor">
+            
+            <div class="cajaTiempo">
+                <div id="today"></div>
+            </div>
+            
+            <div class="cajaTiempo">
+                <div id="tomorrow"></div>
+            </div>
+        </div>
+
+        <div class="contenedor2">
+
+            <p class="text">Ciudad:</p>
+            <select name="lista2" id="lista2">
+                <option value="00">-- Selecciona una ciudad --</option>
+            </select>
+
+            <div class="tiempo-ciudad">
+                <div id="tiempo-ciudad__text"></div>
+                <div id="tiempo-ciudad__max"></div>
+                <div id="tiempo-ciudad__min"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
