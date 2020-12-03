@@ -9,11 +9,12 @@
 .header{
     background-color: rgb(0, 73, 141);
     margin-bottom: 40px;
+    width: 100%;
 }
 
 
 #contenido {
-    max-width: 1000px;
+    width: 90%;
     margin: auto;
 }
 
@@ -38,18 +39,17 @@
 
 .timeResult {
     color: darkslategrey;
-    width: 420px;
     text-align: justify;
 }
 .contenedor {
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
+    text-align: center;
+    margin: auto;
 }
 
 .cajaTiempo {
     margin-top: 30px;
     margin-bottom: 70px;
-    /* border: 2px solid red; */
     padding: 20px;
     border-radius: 8px 8px 0 0;
     box-shadow: lightslategrey 10px 10px 20px;

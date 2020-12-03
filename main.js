@@ -3,8 +3,6 @@ window.onload = inicio;
 function inicio() {
     let codProvincia;
     let codCiudad;
-    let estadoTiempo;
-    let minMax = [];
 
     let titulo = document.getElementById('titulo');
     let today = document.getElementById('today');
@@ -25,6 +23,7 @@ function inicio() {
         codProvincia = this.value;
         displayStatus(tiempoCiudad, 'none');
         displayStatus(cajaTiempo, 'none');
+        deleteLista(lista2);
         if (codProvincia != "00") {
             fetch('https://www.el-tiempo.net/api/json/v2/provincias/' + codProvincia)
             .then(response => response.json())
